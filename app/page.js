@@ -9,7 +9,9 @@ export default function Home() {
         <h1>hola =)</h1>
         <h2>El sitio web está en construcción.</h2>
         <h3>Mientras tanto podés ver mis fotos acá: </h3>
-        <a href="http://www.instagram.com/fedeholc/">instagram.com/fedeholc</a>
+        <a href="http://www.instagram.com/fedeholc/">
+          <span className="link__insta">instagram.com/fedeholc</span>
+        </a>
       </div>
     </main>
   );
