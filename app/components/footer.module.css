@@ -48,5 +48,6 @@
 }
 
 .emoji {
-  filter: grayscale(1) contrast(80) invert(0);
+  filter: grayscale(1) contrast(80) invert(0) brightness(80%);
+  font-size: 0.7rem;
 }
