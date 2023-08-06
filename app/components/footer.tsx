@@ -11,10 +11,10 @@ export default function Footer() {
         <Link href="/">
           <div className={Foot.nombre}>FEDERICO HOLC</div>
         </Link>
-        <div>⚡️</div>
+        <div className={Foot.emoji}>⚡️</div>
         <div className={Foot.nombre}>2023</div>
-        <div>⚡️</div>
-       {/*  <a
+        <div className={Foot.emoji}>⚡️</div>
+        {/*  <a
           className={Foot.icon}
           href="https://fotos.fedeholc.ar"
           target="_blank"
