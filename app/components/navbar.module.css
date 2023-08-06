@@ -78,7 +78,7 @@
 .emoji__divider {
   /* para fondo blanco: */
   /*  filter: grayscale(1) contrast(80) invert(0.8); */
-  filter: grayscale(1) contrast(80) invert(0);
+  filter: grayscale(1) contrast(80) invert(0) brightness(50%);
   font-size: 0.8rem;
 
   display: flex;
