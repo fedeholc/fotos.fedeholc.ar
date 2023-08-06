@@ -1,3 +1,5 @@
+*fedegitignore*
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -33,3 +35,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+public/fotos/bla/bla 01.jpg
+public/fotos/bla/bla 02.jpg
+public/fotos/bla/bla 03.jpg
+public/fotos/bla/bla 04.jpg
+public/fotos/bla/bla 05.jpg
+public/fotos/bla/bla 06.jpg
+public/fotos/bla/bla 07.jpg
+public/fotos/bla/bla 08.jpg
+public/fotos/bla/bla 09.jpg
+public/fotos/bla/bla 10.jpg

@@ -1,95 +1,104 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@keyframes move-bg {
-  to {
-    background-position: var(--bg-size) 0;
-  }
-}
-
-h1 {
-  font-family: var(--font-archivo-black);
-  --bg-size: 400%;
-  --color-one: hsl(319, 100%, 35%);
-  --color-two: hsl(299, 97%, 53%);
-  background: linear-gradient(90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one),
-      var(--color-one),
-      var(--color-one),
-      var(--color-one)) 0 0 / var(--bg-size) 100%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
 
 }
 
-h2,
-h3 {
-  font-family: var(--font-archivo-black);
-  --bg-size: 400%;
-  --color-two: hsl(0, 0%, 65%);
-  --color-one: hsl(0, 0%, 0%);
-  background: linear-gradient(90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one)) 0 0 / var(--bg-size) 100%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
-  font-size: 4.5rem;
-  animation: move-bg 18s linear;
+body {
+  min-width: 250px;
+  background-color: rgb(24, 24, 24);
 }
 
-h2 {
-  font-size: 2.5rem;
+svg.grainy_background {
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 1);
+  filter: contrast(2) brightness(1);
+
 }
 
-h3 {
-  font-size: 2rem;
-}
-
-a:visited,
+/* para que todo lo que es enlace clickeable quede por arriba
+del filtro de la imagen de fondo */
 a {
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  font-family: var(--font-archivo-black);
-  --bg-size: 400%;
-  --color-two: hsl(0, 0%, 39%);
-  --color-one: hsl(0, 0%, 22%);
+  position: relative !important;
+  z-index: 2 !important;
+}
 
-  background: linear-gradient(90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one)) 0 0 / var(--bg-size) 100%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+/* este era el diseño original de 2 columnas para el index */
+/* .main__grid_2col {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "sidebar content";
 
+} */
+
+.main__nav-container {
+  padding: 5rem 1rem 1rem 1rem;
+  /*   height: 100vh;
+ */
+}
+
+.main__grid_1col {
+  background-image: url("/b1.webp");
+  background-size: cover;
+  background-position: center center;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas: "sidebar" "content";
+  justify-items: center;
+
+  height: 100vh;
+}
+
+.modal {
+  display: grid;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 1;
+  color: white;
+  place-content: center;
+  padding: 1rem;
+}
+
+.no_modal {
+  display: flex;
 }
 
 
 
-a:hover {
-  --color-two: hsl(223, 89%, 52%);
-  --color-one: hsl(213, 100%, 50%);
-  background: linear-gradient(90deg,
-      var(--color-one),
-      var(--color-two),
-      var(--color-one)) 0 0 / var(--bg-size) 100%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+/** media queries */
 
-.link__insta {
+@media (hover: none) and (max-width: 1280px) {
+  /*   .main__grid_2col {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "sidebar"
+      "content";
+    place-content: center;
+    place-items: center;
+
+  } */
+
+   html {
+    font-size: 14px;
+  }
  
-  padding: 0.5rem 0.7rem;
-  border: 2px dashed hsl(45, 100%, 53%);
-  border-radius: 10px;
 }
