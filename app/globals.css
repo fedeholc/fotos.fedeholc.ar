@@ -58,8 +58,8 @@ a {
   grid-template-rows: 1fr auto auto;
   grid-template-areas: "sidebar" "content";
   justify-items: center;
-
   height: 100vh;
+  height: 100dvh;
 }
 
 .modal {
