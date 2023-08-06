@@ -51,3 +51,9 @@
   filter: grayscale(1) contrast(80) invert(0) brightness(40%);
   font-size: 0.9rem;
 }
+
+@media (hover:none) {
+  .emoji {
+    font-size: 0.7rem;
+  }
+}
