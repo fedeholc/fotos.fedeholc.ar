@@ -13,6 +13,11 @@
 body {
   min-width: 250px;
   background-color: rgb(24, 24, 24);
+
+  background-image: url("/b1.webp");
+  background-size: cover;
+  background-position: center center;
+
 }
 
 svg.grainy_background {
@@ -49,9 +54,6 @@ a {
 }
 
 .main__grid_1col {
-  background-image: url("/b1.webp");
-  background-size: cover;
-  background-position: center center;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -97,8 +99,8 @@ a {
 
   } */
 
-   html {
+  html {
     font-size: 14px;
   }
- 
+
 }
