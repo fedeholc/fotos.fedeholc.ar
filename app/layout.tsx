@@ -31,7 +31,7 @@ export const bebas = Bebas_Neue({
 });
 
 export const neutra = localFont({
-  src: "../public/fonts/neutra-book.otf",
+  src: "../public/fonts/neutratext-book.otf",
   variable: "--font-neutra",
 });
 
