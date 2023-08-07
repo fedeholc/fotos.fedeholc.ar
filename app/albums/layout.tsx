@@ -17,8 +17,7 @@ export default function AlbumsLayout({
           <Footer></Footer>
         </div>
       </div>
-      <section>
-        {" "}
+      <section className={album.main_content}>
         <svg className="grainy_background" width="100%" height="100%">
           <filter id="grano">
             <feTurbulence
@@ -32,7 +31,6 @@ export default function AlbumsLayout({
           <rect width="100%" height="100%" filter="url(#grano)"></rect>
         </svg>
         {children}
-        
       </section>
     </main>
   );
