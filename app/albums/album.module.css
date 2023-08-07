@@ -37,9 +37,11 @@
    font-family: var(--font-montserrat);
    font-weight: 500;
    font-size: 0.8rem;
-   text-wrap: wrap;
+   /*    text-wrap: wrap;
+ */
    line-height: 0.8rem;
    padding: 0rem 1rem;
+   text-align: center;
  }
 
  .licencia a {

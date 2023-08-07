@@ -8,8 +8,10 @@ import album from "../album.module.css";
 export default function Bla() {
   return (
     <div className={album.page_container}>
-      <div className={album.divider}><div></div></div>
-      
+      <div className={album.divider}>
+        <div></div>
+      </div>
+
       <div className={album.fotogrid1}>
         <div className={album.titulo__wrapper}>
           <div className={album.titulo__container}>
@@ -257,18 +259,20 @@ export default function Bla() {
             width={1920}
             height={1080}
           />
-        </FotoModal3> <div className={album.licencia}>
-        <p>Todas las imágenes bajo licencia Creative Commons</p>
-        &nbsp;
-        <Link
-          href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"
-          target="_blank"
-        >
-          CC BY-SA 4.0
-        </Link>
+        </FotoModal3>{" "}
+        <div className={album.licencia}>
+          <p>
+            Todas las imágenes bajo licencia Creative Commons{" "}
+            <Link
+              href="https://creativecommons.org/licenses/by-sa/4.0/deed.es"
+              target="_blank"
+            >
+              CC BY-SA 4.0
+            </Link>
+          </p>
+        </div>
       </div>
-      </div>
-     
+
       <div className={album.footer_bottom}>
         <Footer></Footer>
       </div>
