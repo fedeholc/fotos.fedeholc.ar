@@ -257,9 +257,7 @@ export default function Bla() {
             width={1920}
             height={1080}
           />
-        </FotoModal3>
-      </div>
-      <div className={album.licencia}>
+        </FotoModal3> <div className={album.licencia}>
         <p>Todas las imágenes bajo licencia Creative Commons</p>
         &nbsp;
         <Link
@@ -269,6 +267,8 @@ export default function Bla() {
           CC BY-SA 4.0
         </Link>
       </div>
+      </div>
+     
       <div className={album.footer_bottom}>
         <Footer></Footer>
       </div>
