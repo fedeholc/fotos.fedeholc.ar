@@ -13,7 +13,7 @@ export default function Home() {
         <NavBar modo="index" align="center"></NavBar>
       </div>
 
-      <section></section>
+      <section ></section>
       <Footer></Footer>
     </div>
   );

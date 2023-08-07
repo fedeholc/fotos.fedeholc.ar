@@ -32,7 +32,7 @@ export default function NavBar({ modo, align }: Props) {
         <Link href="/albums/estaciudad">
           <button>ESTA CIUDAD que no es tuya ni mía</button>
         </Link>
-        <span className={`${navbar.emoji__divider}`}>&nbsp;⚡️&nbsp;</span>
+        <span className={`${navbar.emoji__divider}`}>&nbsp;⭐&nbsp;</span>
         <Link href="/ ">
           <button disabled>ESPLENDOLIA (próximamente) </button>
         </Link>
@@ -45,7 +45,7 @@ export default function NavBar({ modo, align }: Props) {
           </Link>
         </div>
 
-        <span className={`${navbar.emoji__divider}`}>&nbsp;⚡️&nbsp;</span>
+        <span className={`${navbar.emoji__divider}`}>&nbsp;⭐&nbsp;</span>
 
         {/*   <Link href="/albums/bla">
           <button>FUEGO y Purpurina (blog)</button>
